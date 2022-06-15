@@ -1,0 +1,6 @@
+# bu fayl git dasturi qaysi papka  yoki 
+#  monitor qilish kerak emasligini korsatadi
+
+db.sqlite3
+media/
+venv/

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block  content %}
+
+<h1>Groups Paged</h1>
+
+<ol>
+    {% for group in groups %}
+    <li>{{ group.name }}</li>
+    {% endfor %}
+</ol>
+
+<a href="{% url 'poll:create' %}" class="btn btn_outline-info">Qo'shish</a>
+
+{% endblock content %}
