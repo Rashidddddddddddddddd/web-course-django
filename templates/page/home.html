@@ -27,7 +27,7 @@
         <dev class="col-md-4">
             <div class="card my-3">
                 {% if new.image %}
-                <img src="{ new.image.url }" class="card-img-top" alt="{{ new.title }}">
+                <img src="{{ new.image.url }}" class="card-img-top" alt="{{ new.title }}">
                 {% endif %}
                 <div class="card-body">
                 <h5 class="card-title">{{ new.title }}</h5>

@@ -1,6 +1,6 @@
 from django import forms
 
-from .models import New
+from .models import New, Comment
 
 class NewForm(forms.ModelForm):
     class Meta:
@@ -12,3 +12,7 @@ class NewFormMine(forms.ModelForm):
         model = New
         exclude = ['author',  'created']
                
+class CommentForm(forms.ModelForm):
+    class Meta:
+        model = Comment
+        fields = ['body']
